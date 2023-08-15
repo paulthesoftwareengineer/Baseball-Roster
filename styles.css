@@ -21,3 +21,10 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* This creates two equal-width columns */
+    gap: 20px; /* This creates a gap between columns */
+    padding: 20px; /* Padding around the grid container */
+}
