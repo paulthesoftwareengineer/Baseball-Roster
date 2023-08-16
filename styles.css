@@ -1,30 +1,105 @@
+header {
+    width: 100%;
+    height: 300px; /* Adjust this according to your desired height */
+    top: 0;
+    left: 0; /* To ensure it's anchored to the left as well */
+    position: fixed;
+    z-index: 1000;
+    background-image: url('./images/baseball1.jpg'); /* Add your image path */
+    background-size: 100% auto;
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    background-position: center top;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    background-size: cover;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-top: 50vh;
 }
 
-header, section, footer {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+a {
+    text-decoration: none;
+    color: white;
 }
 
-h1, h2 {
-    color: #333;
+li {
+    list-style: none;
+    float: left;
+    margin-left: 15px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
+/* Grid Container */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* This creates two equal-width columns */
-    gap: 20px; /* This creates a gap between columns */
-    padding: 20px; /* Padding around the grid container */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for this example. Adjust based on your needs */
+    grid-template-rows: auto;
+    grid-gap: 2px; /* Gap between grid items. Adjust as needed */
+    background-color: #fff; /* Ensure a background color so the gap appears distinctly */
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: #f5f5f5; /* Adjust this to your desired section background color */
+    padding: 10px; /* Optional: For content spacing */
+    border: 1px solid #ccc; /* Optional: Border for each grid item for visibility */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+/* Add any other styles you might need */
+
+
+@media (max-width: 768px) {
+    .roster, .stats-visualization {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    .stats-visualization {
+        padding: 20px;
+        text-align: center;
+    }
+
+    canvas {
+        margin: 0 auto;
+        display: block;
+    }
 }
