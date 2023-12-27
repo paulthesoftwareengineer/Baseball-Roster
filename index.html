@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="app.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Washington State Baseball Teams</title>
 </head>
 
@@ -15,20 +15,42 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
+                <!-- Your logo here -->
             </div>
             <nav>
                 <ul>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#teams">Teams</a></li>
-                    <li><a href="#team-games">Team Games</a></li>
-                    <li><a href="#team-stats">Team Stats</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#leaders">Leaders</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
 
-    <section id="teams">
-        <h2>Teams</h2>
+<!-- Welcome Section -->
+<section id="welcome">
+    <div class="container">
+        <h1>Welcome to Washington State Baseball</h1>
+        <p>Discover the passion, teamwork, and excitement of baseball in Washington State.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Learn about our history, mission, and dedication to promoting baseball excellence.</p>
+    </div>
+</section>
+
+<!-- Teams Section -->
+<section id="teams">
+    <div class="container">
+        <h2>Our Teams</h2>
+        <p>Explore our baseball teams, their cities, leagues, current records, and dedicated coaches.</p>
         <table>
             <thead>
                 <tr>
@@ -43,28 +65,63 @@
                 <!-- Team rows here -->
             </tbody>
         </table>
-    </section>
+    </div>
+</section>
 
-    <section id="team-games">
-        <h2>Team Games</h2>
-        <table>
-            <!-- Team game rows here -->
-        </table>
-    </section>
+<!-- Leaders Section -->
+<section id="leaders">
+    <div class="container">
+        <h2>Team Leaders</h2>
+        <p>Meet the exceptional leaders who guide our teams to success.</p>
+        <!-- Leader profiles and information here -->
+    </div>
+</section>
 
-    <section id="team-stats">
-        <h2>Team Stats</h2>
+<!-- Stats Section -->
+<section id="stats">
+    <div class="container">
+        <h2>Team Statistics</h2>
+        <p>Explore our team's performance through detailed statistics and charts.</p>
         <ul>
             <li>
                 <canvas id="battingAverageChart" width="400" height="200"></canvas>
             </li>
             <!-- Add more team stats charts here -->
         </ul>
-    </section>
+    </div>
+</section>
 
+<!-- Sponsors Section -->
+<section id="sponsors">
+    <div class="container">
+        <h2>Our Sponsors</h2>
+        <p>Meet our valued sponsors who support us in promoting baseball in Washington State.</p>
+        
+        <!-- Sponsor Cards -->
+        <div class="sponsor-card">
+            <img src="sponsor1.jpg" alt="Sponsor 1 Logo">
+            <h3>Sponsor 1</h3>
+            <p>Supporting baseball excellence since 20XX.</p>
+        </div>
+        
+        <div class="sponsor-card">
+            <img src="sponsor2.jpg" alt="Sponsor 2 Logo">
+            <h3>Sponsor 2</h3>
+            <p>Our dedicated partner in the baseball community.</p>
+        </div>
+
+        <!-- Add more sponsor cards as needed (up to 10) -->
+
+    </div>
+</section>
+
+
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts.js"></script>
 
+    <!-- Footer -->
     <footer>
         <p>© 2023 Baseball Roster Tracker</p>
     </footer>
